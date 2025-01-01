@@ -3,6 +3,7 @@ package com.microservices.user.service.model;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -28,5 +29,5 @@ public class User {
     private String about;
 
     @Transient
-    private List<Rating> rating;
+    private List<Rating> ratings = new ArrayList<>();
 }

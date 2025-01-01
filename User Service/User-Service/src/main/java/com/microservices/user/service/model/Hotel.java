@@ -1,5 +1,6 @@
 package com.microservices.user.service.model;
 
+import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,11 +10,9 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Rating {
-    private String userId;
-    private String ratingId;
+public class Hotel {
     private String hotelId;
-    private int rating;
-    private String remark;
-    private Hotel hotel;
+    private String name;
+    private String location;
+    private String about;
 }
